@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RATSIMBAZAFY Siara Josinah Linah — Développeuse Full Stack & Réseaux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #090A0D;
+      color: #F4F5F7;
+      font-family: 'Inter', sans-serif;
+    }
+    .grid-bg {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .glow-card {
+      background: #111318;
+      border: 1px solid #1E212B;
+      transition: all 0.25s ease;
+    }
+    .glow-card:hover {
+      border-color: rgba(16, 185, 129, 0.45);
+      box-shadow: 0 0 30px -10px rgba(16, 185, 129, 0.15);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-[#090A0D]/85 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-mono text-sm font-medium text-emerald-400 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>~/josinah.dev</span>
+      </a>
+      <div class="hidden sm:flex items-center gap-8 text-xs font-mono text-zinc-400">
+        <a href="#projets" class="hover:text-white transition">01. PROJETS</a>
+        <a href="#competences" class="hover:text-white transition">02. COMPÉTENCES</a>
+        <a href="#experiences" class="hover:text-white transition">03. EXPÉRIENCES</a>
+        <a href="#contact" class="px-3 py-1.5 rounded border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 transition">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="grid-bg border-b border-zinc-800/80">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs mb-6">
+        <span>●</span> Disponible — Développement Full Stack & Administration Réseaux
+      </div>
+      
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.12] max-w-4xl">
+        RATSIMBAZAFY<br/>
+        <span class="text-zinc-400">Siara Josinah Linah</span>
+      </h1>
+      
+      <p class="mt-6 text-base md:text-lg text-zinc-400 max-w-2xl leading-relaxed">
+        Étudiante en Informatique & Réseaux à Toliara. Je conçois et déploie des applications web complètes, modélise des bases de données relationnelles et administre des infrastructures systèmes et réseaux sous Linux.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#projets" class="px-6 py-3 rounded-lg bg-emerald-500 text-zinc-950 font-semibold text-sm hover:bg-emerald-400 transition">
+          Explorer mes réalisations
+        </a>
+        <a href="https://github.com/JosinahRaoulson" target="_blank" class="px-6 py-3 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-200 font-mono text-sm hover:border-zinc-500 transition flex items-center gap-2">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          github.com/JosinahRaoulson
+        </a>
+        <a href="mailto:josinahraoulson@gmail.com" class="px-5 py-3 rounded-lg text-zinc-400 hover:text-emerald-400 font-mono text-sm transition">
+          josinahraoulson@gmail.com
+        </a>
+      </div>
+
+      <!-- QUICK STATS -->
+      <div class="mt-14 pt-8 border-t border-zinc-800/80 grid grid-cols-2 sm:grid-cols-4 gap-6 font-mono">
+        <div>
+          <p class="text-xs text-zinc-500">LOCALISATION</p>
+          <p class="text-sm text-zinc-200 mt-1">Toliara, Madagascar</p>
+        </div>
+        <div>
+          <p class="text-xs text-zinc-500">FORMATION</p>
+          <p class="text-sm text-zinc-200 mt-1">Licence 2 — Info & Réseaux</p>
+        </div>
+        <div>
+          <p class="text-xs text-zinc-500">SPÉCIALITÉ</p>
+          <p class="text-sm text-emerald-400 mt-1">Web Full Stack & SysAdmin</p>
+        </div>
+        <div>
+          <p class="text-xs text-zinc-500">LANGUES</p>
+          <p class="text-sm text-zinc-200 mt-1">Français, Malagasy</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJETS -->
+  <section id="projets" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+      <div>
+        <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider">01 // Réalisations</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Projets techniques sélectionnés</h2>
+      </div>
+      <div class="flex flex-wrap gap-2 font-mono text-xs" id="filter-bar">
+        <button data-filter="all" class="filter-btn active px-3 py-1.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Tous</button>
+        <button data-filter="web" class="filter-btn px-3 py-1.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 hover:border-zinc-600">Web</button>
+        <button data-filter="infra" class="filter-btn px-3 py-1.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 hover:border-zinc-600">Réseaux & Infra</button>
+        <button data-filter="data" class="filter-btn px-3 py-1.5 rounded bg-zinc-900 text-zinc-400 border border-zinc-800 hover:border-zinc-600">Logiciel & BDD</button>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+      
+      <!-- Projet 1 -->
+      <article data-category="web" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-emerald-400">WEB FULL STACK</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Déployé</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">COSTM-ORIENTATION</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Plateforme web d'orientation et d'inscription des étudiants développée pour le Centre d'Orientation du Système et Technologie Moderne. Gestion des sessions de formulaires, interface d'administration et design responsive mobile/desktop.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Python</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Django</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">PostgreSQL</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Render</span>
+        </div>
+      </article>
+
+      <!-- Projet 2 -->
+      <article data-category="infra" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-sky-400">INFRASTRUCTURE LINUX</span>
+            <span class="text-zinc-500">Ubuntu 24.04</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Écosystème Réseau & Services</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Déploiement complet sur serveur Ubuntu : résolution DNS locale (<code class="text-zinc-300">l2toliara.mg</code>), annuaire LDAP centralisé, messagerie sécurisée Postfix/Dovecot avec webmail, hébergement HTTPS et supervision Prometheus + Grafana.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">DNS / LDAP</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Postfix / Dovecot</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Prometheus</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Grafana</span>
+        </div>
+      </article>
+
+      <!-- Projet 3 -->
+      <article data-category="infra" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-sky-400">RÉSEAUX & SUPERVISION</span>
+            <span class="text-zinc-500">GNS3 & SNMP</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Topologie Entreprise & Monitoring</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Simulation d'une architecture réseau d'entreprise multi-départements avec accès Starlink, routeur, points d'accès sans fil et serveur cloud, couplée à une supervision temps réel via Zabbix, Grafana et SNMP.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">GNS3</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Zabbix</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">SNMP</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Routage</span>
+        </div>
+      </article>
+
+      <!-- Projet 4 -->
+      <article data-category="web" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-emerald-400">APPLICATION SPA</span>
+            <span class="text-zinc-500">Vue.js & PHP</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Gestion Étudiante & Statistiques</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Application monopage (SPA) avec authentification sécurisée, opérations CRUD complètes sur les dossiers étudiants, calcul automatique des mentions et visualisation graphique des résultats de classe.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Vue.js</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">PHP</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">MySQL</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">API REST</span>
+        </div>
+      </article>
+
+      <!-- Projet 5 -->
+      <article data-category="data" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-amber-400">APPLICATION DESKTOP</span>
+            <span class="text-zinc-500">Java Swing</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Logiciel de Délibération Scolaire</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Application de bureau connectée via JDBC pour la gestion multi-établissements des élèves, matières, notes, filtres de délibération automatique et génération de bulletins scolaires au format PDF.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Java</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Swing</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">JDBC</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Export PDF</span>
+        </div>
+      </article>
+
+      <!-- Projet 6 -->
+      <article data-category="data" class="project-card glow-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between font-mono text-xs mb-4">
+            <span class="text-amber-400">ARCHITECTURE BDD</span>
+            <span class="text-zinc-500">Merise 2 & SQL</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white">Modélisation SI — ASSURTOUT</h3>
+          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+            Conception complète du système d'information d'une compagnie d'assurance sous Win'Design (MCD, MLD) suivie de l'implémentation SQL avancée intégrant triggers, indexation et partitionnement des tables.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-zinc-800/80 flex flex-wrap gap-1.5 font-mono text-[11px] text-zinc-300">
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Merise 2</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Win'Design</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">SQL Triggers</span>
+          <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">Optimisation</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences" class="border-y border-zinc-800/80 bg-[#0C0E13]">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider">02 // Stack & Savoir-faire</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-12">Compétences techniques</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-xl bg-[#111318] border border-zinc-800">
+          <div class="font-mono text-xs text-emerald-400 mb-3">01 / DÉVELOPPEMENT WEB</div>
+          <ul class="space-y-2.5 text-sm text-zinc-300">
+            <li>Python (Django)</li>
+            <li>PHP & MySQL</li>
+            <li>Vue.js, HTML5, CSS3</li>
+            <li>JavaScript & APIs REST</li>
+            <li>Déploiement cloud (Render)</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-xl bg-[#111318] border border-zinc-800">
+          <div class="font-mono text-xs text-sky-400 mb-3">02 / SYSTÈMES & RÉSEAUX</div>
+          <ul class="space-y-2.5 text-sm text-zinc-300">
+            <li>Administration Ubuntu Linux</li>
+            <li>DNS, LDAP, Postfix, Dovecot</li>
+            <li>Simulation réseau GNS3</li>
+            <li>Supervision Zabbix, Grafana, SNMP</li>
+            <li>Virtualisation VMware & VirtualBox</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-xl bg-[#111318] border border-zinc-800">
+          <div class="font-mono text-xs text-amber-400 mb-3">03 / BASES DE DONNÉES</div>
+          <ul class="space-y-2.5 text-sm text-zinc-300">
+            <li>Modélisation Merise (MCD/MLD)</li>
+            <li>PostgreSQL & MySQL</li>
+            <li>Triggers, Index & Partitionnement</li>
+            <li>Conception sous Win'Design</li>
+            <li>Intégration JDBC</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-xl bg-[#111318] border border-zinc-800">
+          <div class="font-mono text-xs text-purple-400 mb-3">04 / PROGRAMMATION & OUTILS</div>
+          <ul class="space-y-2.5 text-sm text-zinc-300">
+            <li>C, C++, Java (Swing)</li>
+            <li>Algorithmique & Structures de données</li>
+            <li>Git & GitHub</li>
+            <li>VS Code, XAMPP, WampServer</li>
+            <li>Analyse mathématique & RO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCES & FORMATION -->
+  <section id="experiences" class="max-w-6xl mx-auto px-6 py-20">
+    <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider">03 // Parcours</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-12">Expériences & Formation</h2>
+
+    <div class="space-y-6">
+      <div class="p-6 sm:p-8 rounded-xl bg-[#111318] border border-zinc-800 flex flex-col md:flex-row md:items-start justify-between gap-4">
+        <div>
+          <span class="font-mono text-xs text-emerald-400">STAGE EN PRÉSENTIEL • TOLIARA</span>
+          <h3 class="text-lg font-semibold text-white mt-1">Développeuse Web — C.O.S.T.M.</h3>
+          <p class="mt-2 text-sm text-zinc-400 max-w-3xl leading-relaxed">
+            Conception, développement et déploiement en production de l'application web d'orientation et d'inscription <strong class="text-zinc-200">COSTM-ORIENTATION</strong>, accompagnée de missions de présentation de la solution auprès des établissements scolaires de Toliara.
+          </p>
+        </div>
+        <span class="font-mono text-xs text-zinc-400 shrink-0 bg-zinc-900 px-3 py-1.5 rounded border border-zinc-800">2026</span>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-xl bg-[#111318] border border-zinc-800 flex flex-col md:flex-row md:items-start justify-between gap-4">
+        <div>
+          <span class="font-mono text-xs text-sky-400">STAGE EN TÉLÉTRAVAIL</span>
+          <h3 class="text-lg font-semibold text-white mt-1">Ingénieure Réseaux & Supervision (Stagiaire)</h3>
+          <p class="mt-2 text-sm text-zinc-400 max-w-3xl leading-relaxed">
+            Modélisation de topologies réseau d'entreprise sous GNS3, configuration des équipements et mise en place de tableaux de bord de supervision d'infrastructure avec Zabbix, Grafana et SNMP sur Ubuntu, avec points d'avancement hebdomadaires.
+          </p>
+        </div>
+        <span class="font-mono text-xs text-zinc-400 shrink-0 bg-zinc-900 px-3 py-1.5 rounded border border-zinc-800">2026</span>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-xl bg-[#111318] border border-zinc-800 flex flex-col md:flex-row md:items-start justify-between gap-4">
+        <div>
+          <span class="font-mono text-xs text-zinc-400">PARCOURS UNIVERSITAIRE • TOLIARA</span>
+          <h3 class="text-lg font-semibold text-white mt-1">Licence 2 — Informatique & Réseaux</h3>
+          <p class="mt-2 text-sm text-zinc-400 max-w-3xl leading-relaxed">
+            Formation approfondie en administration systèmes et réseaux, développement web et logiciel (C, C++, Java, PHP, Python), modélisation de bases de données (Merise, SQL), algorithmique avancée et mathématiques appliquées.
+          </p>
+        </div>
+        <span class="font-mono text-xs text-zinc-400 shrink-0 bg-zinc-900 px-3 py-1.5 rounded border border-zinc-800">En cours</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="border-t border-zinc-800/80 bg-[#07080A]">
+    <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div>
+        <span class="font-mono text-xs text-emerald-400">04 // CONTACT</span>
+        <h2 class="text-2xl font-bold text-white mt-2">Entrons en contact</h2>
+        <p class="text-sm text-zinc-400 mt-2">Pour une opportunité de collaboration, un stage ou un projet technique.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:josinahraoulson@gmail.com" class="px-5 py-3 rounded-lg bg-emerald-500 text-zinc-950 font-semibold text-sm hover:bg-emerald-400 transition">
+          josinahraoulson@gmail.com
+        </a>
+        <a href="https://github.com/JosinahRaoulson" target="_blank" class="px-5 py-3 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-200 font-mono text-sm hover:border-zinc-500 transition">
+          GitHub ↗
+        </a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 py-6 border-t border-zinc-900 flex flex-col sm:flex-row justify-between text-xs font-mono text-zinc-500 gap-2">
+      <span>© 2026 RATSIMBAZAFY Siara Josinah Linah</span>
+      <span>Toliara, Madagascar</span>
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => {
+          b.classList.remove('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/40');
+          b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+        });
+        btn.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+        btn.classList.add('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/40');
+
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
